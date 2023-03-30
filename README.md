@@ -6,7 +6,7 @@
 
 # Contact me: 📇
 * Discord: LUKYMAS#7782
-* Mail: lksmasin@lunatee.ml
+* Mail: mail@lukymas.eu.org
 
 # My best projects: 🌟
 1. lunatee.ml - internet safety & security projects

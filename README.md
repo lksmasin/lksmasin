@@ -1,18 +1,16 @@
-# Tell me: lukymas 💭
+# Call me: lukymas 💭
 * I'm from Czech Republic
-* Hobbies: Minecraft server setuping, gaming, programing
-* I like games: Minecraft, Valorant, GTAV
-* I'm learning: Html, css, js
-* I already know: C#, Python
+* Hobbies: programing, gaming
+* I'm learning: css, c#
+* I already know: Python, Html
 
-**Most of my projects are in Czech**
-*But even so, I try to make sure that my projects can be tried by everyone!*
+# I'll be updating it here a lot more!
 
 # Contact me: 📇
-* Discord (most active): lukymas#7782
-* Mail: soon 😄
+* Discord: lukymas#7782
+* Mail: lksmasin@lunatee.ml
 
 # My best projects: ❗
-1. SahraB discord bot (Czech/Slovak only)
-2. Minecraft server mc.darkplay.cf (Czech/Slovak only)
-3. exTent Studios - my games studios (soon)
+1. lunatee.ml - internet safety & security projects
+2. exTent Studios - my games studios (soon)
+

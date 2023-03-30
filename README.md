@@ -5,7 +5,7 @@
 * I already know: Python, Html
 
 # Contact me: 📇
-* Discord: lukymas#7782
+* Discord: LUKYMAS#7782
 * Mail: lksmasin@lunatee.ml
 
 # My best projects: 🌟

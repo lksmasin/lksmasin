@@ -1,0 +1,145 @@
+.home-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-image: radial-gradient(circle at center bottom, rgb(19, 63, 144) 2.00%,rgb(19, 31, 42) 100.00%);
+}
+.home-container1 {
+  width: 850px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.home-text01 {
+  color: #ffffff;
+  font-size: 50px;
+  font-family: Open Sans;
+}
+.home-container2 {
+  width: 860px;
+  height: 48px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.home-text03 {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-family: Fira Sans;
+}
+.home-link {
+  color: rgb(1, 141, 255);
+  font-size: 24px;
+  font-family: Fira Sans;
+}
+.home-container3 {
+  flex: 0 0 auto;
+  width: 860px;
+  height: 48px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.home-text04 {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-family: Fira Sans;
+}
+.home-text06 {
+  font-weight: 700;
+}
+.home-container4 {
+  flex: 0 0 auto;
+  width: 860px;
+  height: 48px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.home-text07 {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-family: Fira Sans;
+}
+.home-link1 {
+  color: rgb(1, 141, 255);
+  font-size: 24px;
+}
+.home-container5 {
+  flex: 0 0 auto;
+  width: auto;
+  height: 48px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.home-container6 {
+  flex: 0 0 auto;
+  width: 860px;
+  height: 48px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.home-text08 {
+  color: #ffffff;
+  font-size: 24px;
+}
+.home-container7 {
+  flex: 0 0 auto;
+  width: 330px;
+  height: 256px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+}
+.home-link2 {
+  display: contents;
+}
+.home-image {
+  width: 100px;
+  object-fit: cover;
+  text-decoration: none;
+}
+.home-text09 {
+  top: 165px;
+  left: 3px;
+  color: #ffffff;
+  position: absolute;
+  align-self: flex-end;
+  font-family: Fira Sans;
+  font-weight: 700;
+}
+.home-text10 {
+  top: 165px;
+  color: rgb(255, 255, 255);
+  right: -16px;
+  position: absolute;
+  align-self: flex-end;
+  font-family: Fira Sans;
+  font-weight: 700;
+}
+.home-link3 {
+  display: contents;
+}
+.home-image1 {
+  top: 78px;
+  right: 0px;
+  width: 84px;
+  height: 84px;
+  position: absolute;
+  align-self: center;
+  object-fit: cover;
+  text-decoration: none;
+}

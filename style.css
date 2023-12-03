@@ -41,7 +41,7 @@ body{
 }
 
 .okno {
-    width: 1539px;
+    max-width: 1530px;
     margin: auto;
     height: 800px;
     max-width: 1539px;
@@ -55,6 +55,13 @@ body{
     align-items: center;
 }
 
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
 .okno-text {
     margin: 0 auto;
     text-align: center;
@@ -66,7 +73,7 @@ body{
     line-height: normal; 
 }
 
-.okno-text-email {
+.okno-text-odkaz {
     color: #FFF;
     font-family: Inter;
     font-size: 40px;
@@ -76,10 +83,36 @@ body{
     text-decoration-line: underline;
 }
 
-.name{
+.zásluhy {
     color: rgb(255, 255, 255);
     font-size: x-small;
     text-align: center;
+    font-family: monospace;
+}
+
+.zásluhy:hover {
+    text-align: center;
+    text-decoration: underline;
+    font-family: monospace;
+    animation: colorRotate 6s linear 0s infinite;
+}
+
+@keyframes colorRotate {
+    from {
+        color: #e566ff;
+    }
+    10% {
+        color: #0099ff;
+    }
+    50% {
+        color: #00ff00;
+    }
+    75% {
+        color: #ff3399;
+    }
+    100% {
+        color: #6666ff;
+    }
 }
 
 

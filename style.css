@@ -1,122 +1,205 @@
-body{
-    background: url(./Obrázky/Pozadí.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    box-sizing: border-box;
+body {
+    font-family: 'Outfit', ui-sans-serif;
+    margin: 0; /* Zajišťuje, že nebude žádný výchozí okraj */
 }
 
-.profilovka {
-    margin-top: 120px;
+.Navigace {
+    width: 100%;
+    height: 60px;
+    text-align: right;
+}
+
+.Ikony-nav {
+    max-height: 30px;
+    max-width: 30px;
+    margin-right: 15px;
+}
+
+.Hlavní {
+    display: flex;
+    justify-content: space-between; /* Rozloží prvky do maximální šířky */
+    padding: 0 250px; /* Odsazení obsahu o 250px z levé a pravé strany */
+}
+
+.Jmeno {
+    margin: 150px 0 0 0;
+    color: transparent;
+    font-family: 'Outfit', system-ui;
+    font-style: normal;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 0;
+    text-decoration: none;
+    text-transform: none;
+    background: linear-gradient(159deg, rgb(0, 60, 255) 46%, rgb(11, 0, 163) 65%, rgba(0,0,0,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Popisek {
+    margin: 0;
+    color: rgba(81, 81, 81, 1);
+    font-family: 'Outfit', ui-sans-serif;
+    font-style: normal;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.Profilovka {
+    margin-top: 150px;
+    margin-left: 550px;
+    border-radius: 50%;
     transition: width 2s, height 2s, transform 2s;
     display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
+    max-width: 250px;
+    max-height: 250px;
 }
 
-.profilovka:hover {
-    transform: rotate(360deg)
+.Profilovka:hover {
+    transform: rotate(360deg);
+    cursor: grabbing;
 }
 
-.uvitani {
-    color: #FFF;
-    font-family: Outfit;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 700px;
-    line-height: normal;
-    text-align: center;
+.Hlavní-btn {
+    margin-top: 25px;
 }
 
-.uvitani-podrobnosti {
-    color: #FFF;
-    font-family: Inter;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-align: center;
-    margin-bottom: 150px;
-}
-
-.okno {
-    max-width: 1530px;
-    margin: auto;
-    height: 800px;
-    max-width: 1539px;
-    max-height: 800px; 
-    flex-shrink: 0; 
+.Hlavní-btn button {
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    padding: 15px 20px;
     border-radius: 40px;
-    background: rgba(217, 217, 217, 0.50);
-    box-shadow: 0px 4px 35px 1px rgba(0, 0, 0, 0.60);
-    justify-content: center;
+    cursor: pointer;
+}
+
+.Hlavní-btn-prim {
+    color: white;
+    background-color: #003cff;
+}
+
+.Hlavní-btn-seku {
+    color: black;
+    background-color: #cce0ff;
+}
+
+.Další-info {
+    margin: 80px 0;
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    padding: 0 250px; /* Odsazení obsahu o 250px z levé a pravé strany */
 }
 
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    [class*="col-"] {
-        width: 100%;
-    }
+.Dals-info-box {
+    width: calc(33.33% - 20px); /* Přizpůsobení velikosti boxů na širší obrazovky */
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #ececec;
 }
 
-.okno-text {
-    margin: 0 auto;
-    text-align: center;
-    color: #FFF;
-    font-family: Inter;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal; 
+.Dals-info-box-nadpis {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 0;
 }
 
-.okno-text-odkaz {
-    color: #FFF;
-    font-family: Inter;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-decoration-line: underline;
-}
-
-.zásluhy {
-    color: rgb(255, 255, 255);
-    font-size: x-small;
-    text-align: center;
-    font-family: monospace;
-}
-
-.zásluhy:hover {
-    text-align: center;
-    text-decoration: underline;
-    font-family: monospace;
-    animation: colorRotate 6s linear 0s infinite;
-}
-
-@keyframes colorRotate {
-    from {
-        color: #e566ff;
-    }
-    10% {
-        color: #0099ff;
-    }
-    50% {
-        color: #00ff00;
-    }
-    75% {
-        color: #ff3399;
-    }
-    100% {
-        color: #6666ff;
-    }
+.Dals-info-box-text {
+    margin-top: 10px;
+    font-size: 16px;
 }
 
 
-.footer {
-    margin-top: 150px;
+footer {
+    margin-top: 80px;
+    margin-bottom: 15px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
     width: 100%;
+    font-size: 12px;
+    font-family: 'Outfit', ui-sans-serif;
 }
+
+.Pata {
+    text-align: center;
+    margin: 0;
+}
+
+.Pata-odkaz {
+    color: blue;
+    text-decoration: none;
+}
+
+.Pata-odkaz:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1200px) {
+    .Hlavní {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px; /* Odsazení obsahu o 20px z levé a pravé strany */
+    }
+
+    .Jmeno {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .Popisek {
+        margin: 0;
+        text-align: center;
+    }
+
+    .Profilovka {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .Hlavní-btn {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .Hlavní-btn button {
+        margin-right: 10px;
+    }
+
+    .Další-info {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px; /* Odsazení obsahu o 20px z levé a pravé strany */
+    }
+
+    .Dals-info-box {
+        width: calc(100% - 20px); /* Přizpůsobení šířky boxů na menší obrazovky */
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .Další-info {
+        justify-content: center; /* Uprostředí boxy na širších displejích */
+    }
+
+    .Dals-info-box {
+        width: calc(33.33% - 40px); /* Přizpůsobení velikosti boxů a mezer na širší obrazovky */
+        margin-bottom: 20px;
+        margin-right: 50px; /* Mezera mezi boxy */
+    }
+
+    .Dals-info-box:last-child {
+        margin-right: 0; /* Zrušení mezer u posledního boxu */
+    }
+}
+

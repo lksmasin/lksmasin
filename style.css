@@ -21,35 +21,6 @@ body {
     padding: 0 250px; /* Odsazení obsahu o 250px z levé a pravé strany */
 }
 
-.Jmeno {
-    margin: 150px 0 0 0;
-    color: transparent;
-    font-family: 'Outfit', system-ui;
-    font-style: normal;
-    font-size: 64px;
-    font-weight: 600;
-    line-height: 1.2;
-    letter-spacing: 0;
-    text-decoration: none;
-    text-transform: none;
-    background: linear-gradient(159deg, rgb(0, 60, 255) 46%, rgb(11, 0, 163) 65%, rgba(0,0,0,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.Popisek {
-    margin: 0;
-    color: rgba(81, 81, 81, 1);
-    font-family: 'Outfit', ui-sans-serif;
-    font-style: normal;
-    font-size: 32px;
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: 0;
-    text-decoration: none;
-    text-transform: none;
-}
-
 .Profilovka {
     margin-top: 150px;
     margin-left: 550px;
@@ -64,6 +35,29 @@ body {
 .Profilovka:hover {
     transform: rotate(360deg);
     cursor: grabbing;
+}
+
+.Jmeno {
+    margin: 150px 0 0 0;
+    color: transparent;
+    font-family: 'Outfit', system-ui;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 1.2;
+    background: linear-gradient(159deg, rgb(0, 60, 255) 46%, rgb(11, 0, 163) 65%, rgba(0,0,0,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Popisek {
+    margin: 0;
+    color: rgba(81, 81, 81, 1);
+    font-family: 'Outfit', ui-sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-decoration: none;
+    text-transform: none;
 }
 
 .Hlavní-btn {
@@ -86,6 +80,7 @@ body {
 }
 
 .Hlavní-btn-seku {
+    margin-top: 10px;
     color: black;
     background-color: #cce0ff;
 }
@@ -120,7 +115,6 @@ body {
 footer {
     margin-top: 80px;
     margin-bottom: 15px;
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -149,21 +143,26 @@ footer {
         padding: 0 20px; /* Odsazení obsahu o 20px z levé a pravé strany */
     }
 
-    .Jmeno {
-        margin: 20px 0;
-        text-align: center;
-    }
-
-    .Popisek {
-        margin: 0;
-        text-align: center;
-    }
-
     .Profilovka {
         margin-top: 20px;
         margin-bottom: 20px;
         margin-left: auto;
         margin-right: auto;
+        display: flex;
+        order: -1; /* Změna pořadí, aby byla profilovka nad jménem */
+    }
+
+    .Jmeno {
+        margin: 20px 0;
+        text-align: center;
+        display: flex;
+        font-size: 54px;
+    }
+
+    .Popisek {
+        margin: 0;
+        text-align: center;
+        font-size: 24;
     }
 
     .Hlavní-btn {
@@ -202,4 +201,3 @@ footer {
         margin-right: 0; /* Zrušení mezer u posledního boxu */
     }
 }
-

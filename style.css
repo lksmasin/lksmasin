@@ -1,70 +1,37 @@
 body {
-    font-family: 'Outfit', ui-sans-serif;
-    margin: 0; /* Zajišťuje, že nebude žádný výchozí okraj */
+    background: #110e07;
+    color: #eae1d4;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0; 
+    padding: 0;
 }
 
-.Navigace {
-    width: 100%;
-    height: 60px;
-    text-align: right;
-}
-
-.Ikony-nav {
-    max-height: 30px;
-    max-width: 30px;
-    margin-right: 15px;
-}
-
-.Hlavní {
-    display: flex;
-    justify-content: space-between; /* Rozloží prvky do maximální šířky */
+#Hlavní {
     padding: 0 250px; /* Odsazení obsahu o 250px z levé a pravé strany */
+    margin-top: 250px;
 }
 
-.Profilovka {
-    margin-top: 150px;
-    margin-left: 550px;
-    border-radius: 50%;
-    transition: width 2s, height 2s, transform 2s;
-    display: flex;
-    position: relative;
-    max-width: 250px;
-    max-height: 250px;
-}
-
-.Profilovka:hover {
-    transform: rotate(360deg);
-    cursor: grabbing;
-}
-
-.Jmeno {
-    margin: 150px 0 0 0;
-    color: transparent;
-    font-family: 'Outfit', system-ui;
+#Hlavní h1{
     font-size: 64px;
     font-weight: 600;
-    line-height: 1.2;
-    background: linear-gradient(159deg, rgb(0, 60, 255) 46%, rgb(11, 0, 163) 65%, rgba(0,0,0,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #eae1d4;
+    margin: 0;
 }
 
 .Popisek {
     margin: 0;
-    color: rgba(81, 81, 81, 1);
-    font-family: 'Outfit', ui-sans-serif;
+    color: #cfc6b4;
     font-size: 32px;
     font-weight: 500;
-    line-height: 1.2;
     text-decoration: none;
     text-transform: none;
 }
 
-.Hlavní-btn {
-    margin-top: 25px;
+.Btns{
+    margin-top: 35px;
 }
 
-.Hlavní-btn button {
+.Btns button {
     margin-right: 10px;
     font-weight: bold;
     font-size: 16px;
@@ -74,19 +41,18 @@ body {
     cursor: pointer;
 }
 
-.Hlavní-btn-prim {
-    color: white;
-    background-color: #003cff;
+.Btn-prim {
+    color: #ffe089;
+    background-color: #574500;
 }
 
-.Hlavní-btn-seku {
-    margin-top: 10px;
-    color: black;
-    background-color: #cce0ff;
+.Btn-sec {
+    color: #f1e1bb;
+    background-color: #50462a;
 }
 
 .Další-info {
-    margin: 80px 0;
+    margin-top: 150px;
     display: flex;
     justify-content: space-between;
     padding: 0 250px; /* Odsazení obsahu o 250px z levé a pravé strany */
@@ -97,7 +63,12 @@ body {
     margin-bottom: 20px;
     padding: 15px;
     border-radius: 15px;
-    background-color: #ececec;
+    background-color: #50462a;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.Dals-info-box:hover {
+    transform: translateY(-10px);
 }
 
 .Dals-info-box-nadpis {
@@ -119,7 +90,6 @@ footer {
     bottom: 0;
     width: 100%;
     font-size: 12px;
-    font-family: 'Outfit', ui-sans-serif;
 }
 
 .Pata {
@@ -127,29 +97,15 @@ footer {
     margin: 0;
 }
 
-.Pata-odkaz {
-    color: blue;
-    text-decoration: none;
-}
-
 .Pata-odkaz:hover {
     text-decoration: underline;
 }
 
 @media screen and (max-width: 1200px) {
-    .Hlavní {
+    #Hlavní {
         flex-direction: column;
         align-items: center;
         padding: 0 20px; /* Odsazení obsahu o 20px z levé a pravé strany */
-    }
-
-    .Profilovka {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        margin-left: auto;
-        margin-right: auto;
-        display: flex;
-        order: -1; /* Změna pořadí, aby byla profilovka nad jménem */
     }
 
     .Jmeno {
@@ -165,12 +121,12 @@ footer {
         font-size: 24;
     }
 
-    .Hlavní-btn {
+    .Btn {
         margin-top: 20px;
         text-align: center;
     }
 
-    .Hlavní-btn button {
+    .Btn button {
         margin-right: 10px;
     }
 

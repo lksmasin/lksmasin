@@ -6,19 +6,19 @@ body {
     padding: 0;
 }
 
-#Hlavní {
+#Hlavni {
     padding: 0 250px; /* Odsazení obsahu o 250px z levé a pravé strany */
     margin-top: 250px;
 }
 
-#Hlavní h1{
+#Hlavni h1{
     font-size: 64px;
-    font-weight: 600;
+    font-weight: 900;
     color: #eae1d4;
     margin: 0;
 }
 
-.Popisek {
+#Hlavni p {
     margin: 0;
     color: #cfc6b4;
     font-size: 32px;
@@ -51,37 +51,48 @@ body {
     background-color: #50462a;
 }
 
-.Další-info {
-    margin-top: 150px;
+.Btn-proj {
+    color: #50462a;
+    background-color: #d4c5a1;
+}
+
+#Dalsi-info {
+    margin-top: 130px;
     display: flex;
     justify-content: space-between;
     padding: 0 250px; /* Odsazení obsahu o 250px z levé a pravé strany */
 }
 
-.Dals-info-box {
+.Dalsi-info-box {
     width: calc(33.33% - 20px); /* Přizpůsobení velikosti boxů na širší obrazovky */
     margin-bottom: 20px;
-    padding: 15px;
+    padding: 30px;
     border-radius: 15px;
     background-color: #50462a;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.Dals-info-box:hover {
+.Dalsi-info-box:hover {
     transform: translateY(-10px);
 }
 
-.Dals-info-box-nadpis {
-    font-size: 24px;
-    font-weight: 500;
+.Dalsi-info-box h3 {
+    font-size: 28px;
+    font-weight: 600;
     margin-bottom: 0;
+    margin-top: 15px;
 }
 
-.Dals-info-box-text {
+.Dalsi-info-box ul {
+    padding-left: 24px;
+    font-weight: 400;
     margin-top: 10px;
-    font-size: 16px;
 }
 
+.Dalsi-info-box li {
+    font-size: 18px;
+    line-height: 1.5em;
+}
 
 footer {
     margin-top: 80px;
@@ -92,20 +103,53 @@ footer {
     font-size: 12px;
 }
 
-.Pata {
+footer p {
     text-align: center;
     margin: 0;
 }
 
-.Pata-odkaz:hover {
+footer a {
+    color: #eae1d4;
+    text-decoration: none;
+}
+
+footer a:hover {
     text-decoration: underline;
 }
 
+#Projekty {
+    margin-top: 150px;
+    padding-left: 250px;
+}
+
+#Projekty h3 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+
+#Projekty p {
+    font-weight: 400;
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 1.5em;
+}
+
+.Projekty-box {
+    width: calc(100% - 250px); /* Přizpůsobení velikosti boxů na širší obrazovky */
+    margin-bottom: 20px;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #50462a;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
 @media screen and (max-width: 1200px) {
-    #Hlavní {
+    #Hlavni {
         flex-direction: column;
         align-items: center;
-        padding: 0 20px; /* Odsazení obsahu o 20px z levé a pravé strany */
+        padding: 0 20px;
     }
 
     .Jmeno {
@@ -130,30 +174,30 @@ footer {
         margin-right: 10px;
     }
 
-    .Další-info {
+    #Dalsi-info {
         flex-direction: column;
         align-items: center;
-        padding: 0 20px; /* Odsazení obsahu o 20px z levé a pravé strany */
+        padding: 0 20px;
     }
 
-    .Dals-info-box {
-        width: calc(100% - 20px); /* Přizpůsobení šířky boxů na menší obrazovky */
+    .Dalsi-info-box {
+        width: calc(100% - 20px);
         margin-bottom: 20px;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    .Další-info {
-        justify-content: center; /* Uprostředí boxy na širších displejích */
+    #Dalsi-info {
+        justify-content: center;
     }
 
-    .Dals-info-box {
-        width: calc(33.33% - 40px); /* Přizpůsobení velikosti boxů a mezer na širší obrazovky */
+    .Dalsi-info-box {
+        width: calc(33.33% - 40px);
         margin-bottom: 20px;
-        margin-right: 50px; /* Mezera mezi boxy */
+        margin-right: 50px;
     }
 
-    .Dals-info-box:last-child {
-        margin-right: 0; /* Zrušení mezer u posledního boxu */
+    .Dalsi-info-box:last-child {
+        margin-right: 0;
     }
 }

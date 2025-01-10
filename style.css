@@ -1,7 +1,9 @@
 body {
     background: #110e07;
     color: #eae1d4;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
     margin: 0; 
     padding: 0;
 }
@@ -13,7 +15,7 @@ body {
 
 #Hlavni h1{
     font-size: 64px;
-    font-weight: 900;
+    font-weight: 800;
     color: #eae1d4;
     margin: 0;
 }
